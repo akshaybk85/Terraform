@@ -44,8 +44,8 @@ once installed open terminal and configure aws credentials
 PS C:\Users\admin> aws --version  # check the current version 
 aws-cli/2.31.7 Python/3.13.7 Windows/11 exe/AMD64
 PS C:\Users\admin> aws configure
-AWS Access Key ID [****************SUNF]: 
-AWS Secret Access Key [****************Ps4+]: 
+AWS Access Key ID [****************SUNF]:  your AWS Access Key ID
+AWS Secret Access Key [****************Ps4+]:Your AWS Secret Access Key
 Default region name [ap-south-1]: "Your default region"
 Default output format [json]: json
 ```
