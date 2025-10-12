@@ -12,13 +12,11 @@ Access Credintials:- Depending on the provider, the type of access crediantials 
 
 1. Let us create an IAM user (using AWS CLI):  
 
-
 ```bash
 aws iam create-user --user-name MyNewUser
 ```
 
 2.Attach the AdministratorAccess policy to the new user:
-
 
 ```bash
 aws iam attach-user-policy \
@@ -31,7 +29,9 @@ aws iam attach-user-policy \
  ```bash
 aws iam list-attached-user-policies --user-name MyNewUser
 ```
+
 4.Generate access keys for the user (save the Access Key and Secret Access Key): 
+
  ```bash
 aws iam create-access-key --user-name MyNewUser
 ```
