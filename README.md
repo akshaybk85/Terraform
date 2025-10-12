@@ -16,11 +16,13 @@ aws iam create-user --user-name MyNewUser
 '''bash
 
 2.Give a Permision 
+
 '''bash
 aws iam attach-user-policy \
   --user-name MyNewUser  \
   --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
 '''
+
 3. To confirm if the access has been provided Please use below command 
 '''bash
 aws iam list-attached-user-policies --user-name MyNewUser
