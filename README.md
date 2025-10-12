@@ -17,7 +17,7 @@ Access Credintials:- Depending on the provider, the type of access crediantials 
 aws iam create-user --user-name MyNewUser
 ```
 
-2.Give a Permision 
+2.Attach the AdministratorAccess policy to the new user:
 
 
 ```bash
@@ -31,8 +31,7 @@ aws iam attach-user-policy \
  ```bash
 aws iam list-attached-user-policies --user-name MyNewUser
 ```
-3. Now we have to create access key, One key are generated save it [i.e Access key and secrete access key]
- 
+4.Generate access keys for the user (save the Access Key and Secret Access Key): 
  ```bash
 aws iam create-access-key --user-name MyNewUser
 ```
