@@ -64,7 +64,7 @@ It also lets you easily switch between multiple AWS accounts/profiles without ch
 
 Before writing your first Terraform code, confirm that your AWS CLI is properly connected by running:
 
-``bash
+```bash
 aws sts get-caller-identity
 ```
 If the setup is correct, this command will return your Account ID, User ID, and ARN.
