@@ -35,7 +35,30 @@ aws iam list-attached-user-policies --user-name MyNewUser
  ```bash
 aws iam create-access-key --user-name MyNewUser
 ```
+Make sure to install AWS CLI and VS Code as per your machine type.
+
+once installed open terminal and configure aws credentials
+
+```bash
+
+PS C:\Users\admin> aws --version  # check the current version 
+aws-cli/2.31.7 Python/3.13.7 Windows/11 exe/AMD64
+PS C:\Users\admin> aws configure
+AWS Access Key ID [****************SUNF]: 
+AWS Secret Access Key [****************Ps4+]: 
+Default region name [ap-south-1]: "Your default region"
+Default output format [json]: json
+```
+This creates two files:
+~/.aws/credentials → stores keys
+~/.aws/config → stores region & settings
 
 
+Why we don’t put keys directly in Terraform code?
 
+Security risk  — If we commit .tf files with keys to GitHub, anyone can use them.
+
+Using environment variables or the ~/.aws/credentials file keeps keys outside your Terraform repo.
+
+It also lets you easily switch between multiple AWS accounts/profiles without changing code.
 
