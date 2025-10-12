@@ -62,3 +62,11 @@ Using environment variables or the ~/.aws/credentials file keeps keys outside yo
 
 It also lets you easily switch between multiple AWS accounts/profiles without changing code.
 
+Before writing your first Terraform code, confirm that your AWS CLI is properly connected by running:
+
+``bash
+aws sts get-caller-identity
+```
+If the setup is correct, this command will return your Account ID, User ID, and ARN.
+
+
