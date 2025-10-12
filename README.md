@@ -10,10 +10,11 @@ Access Credintials:- Depending on the provider, the type of access crediantials 
 
 <img width="451" height="121" alt="image" src="https://github.com/user-attachments/assets/b8672777-cec3-40ba-8929-abbc242dad85" />
 
-1.Let us create a IAM user i'm using aws CLI for user creation 
-'''bash
+1. Let us create an IAM user (using AWS CLI):  
+
+```bash
 aws iam create-user --user-name MyNewUser
-'''bash
+'''
 
 2.Give a Permision 
 
